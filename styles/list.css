@@ -3,8 +3,6 @@
     scroll-behavior: smooth;
 }
 
-/*                   Content                  */
-
 .content{
     padding-bottom: 5%;
 }
@@ -14,7 +12,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* display:none; */
 }
 
 .hotel-card{
@@ -69,7 +66,6 @@
 }
 
 .map img{
-    /* width: 100%; */
     margin: 0 auto;
     padding: 0 15px;
 }

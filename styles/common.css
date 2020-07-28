@@ -1,7 +1,3 @@
-/* *{
-    box-sizing: border-box;
-} */
-
 body{
     width: 100%;
     height: 100vh;
@@ -27,8 +23,19 @@ header,footer{
     color: orange;
   }
 
-/******************* Header ******************/
+@media (min-width: 320px) and (max-width: 575px) {
+    form .row{
+        flex-wrap: nowrap;
+    }
+    
+    .contactus-modal .col-sm-2 {
+        max-width: 15.666667%;
+    }
+    .contactus-modal .col-sm-6{
+        width: 80%;
+    } 
 
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -64,8 +71,6 @@ header .login{
     padding-top: 60px;
     min-height: 100vh;
 }
-
-/******************* Footer ******************/
 
 footer{
     display: flex;
@@ -109,27 +114,6 @@ footer a img{
     text-align: center;
 }
 
-/* .col-sm-2{
-    max-width: 9.666667%;
-} */
 
 
-
-
-
-@media (min-width: 320px) and (max-width: 575px) {
-    form .row{
-        flex-wrap: nowrap;
-    }
-    .col-form-label{
-        /* padding-left: 0; */
-    }
-    .contactus-modal .col-sm-2 {
-        max-width: 15.666667%;
-    }
-    .contactus-modal .col-sm-6{
-        width: 80%;
-    } 
-
-}
  

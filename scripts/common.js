@@ -1,7 +1,3 @@
-navHeaderTemplate();
-contactTemplate();
-loginTemplate();
-footerTemplate();
 
 
 function navHeaderTemplate() {
@@ -86,7 +82,7 @@ function footerTemplate() {
     '<a class="btn btn-info btn-sm text-white" data-toggle="modal" data-target="#contactus-modal" target="_self" href="./contact.html">Contact Us</a>'+
     '</div>'+
     '<div class="copyright">'+
-    '<span>&copy;2020 ROOM SEARCH PVT. LTD</span>'+'</div>'+
+    '<span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>'+'</div>'+
     '<div class="social-media-icons">'+
     '<a href="https://www.facebook.com/"  target="_blank">'+
     '<img src="./assests/images/facebook.png" alt="Fackbook"/>'+
@@ -101,3 +97,8 @@ function footerTemplate() {
 
     document.getElementById('footer').innerHTML += footertemplate;
 }
+
+navHeaderTemplate();
+contactTemplate();
+loginTemplate();
+footerTemplate();
