@@ -1,20 +1,23 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
+    <!-- Wrap Div -->
+    <div class="main-container">
 
-        <!-- Header Div -->
-        <header>
-            <img src="./assests/images/logo.png" alt="logo"/>
-            <a class="login" href="./login.html">Login</a>
-        </header>
+        <!-- Header -->
+        <header id="navheader"></header>
 
-        <!-- Content Div-->
+        <!-- Content -->
         <div class="content">
             <div class="search-box">
                 <div class="search-bar">
@@ -22,47 +25,81 @@
                 </div>
             </div>
 
-            <div class="city-images">
-                <a href="./list.html" target="_self">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" 
-                        alt="new-delhi"/>
-                </a>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" 
+            <div class="city-images flex-wrap pt-5 pb-4">
+                <div class="images">
+                    <a href="./list.html" target="_self">
+                        <div class="overlay"></div>
+                        <p class="image-title">Delhi</p>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" 
+                            alt="new-delhi"/>
+                    </a>
+                </div>
+                <div class="images">
+                    <div class="overlay"></div>
+                    <p class="image-title">Goa</p>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" 
                     alt="Goa">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" 
-                    alt="charminar">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" 
+                </div>
+                <div class="images">
+                    <div class="overlay"></div>
+                    <p class="image-title">Hyderbad</p>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" 
+                    alt="Hyderbad">
+                </div>
+                <div class="images">
+                    <div class="overlay"></div>
+                    <p class="image-title">kolkata</p>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" 
                     alt="kolkata-calcutta">
+                </div>
+            </div>
+
+            <div>
+                <div class="city-images flex-wrap pt-5 pb-4">
+                    
+                    <div class="images">
+                        <div class="overlay"></div>
+                        <p class="image-title">Chennai</p>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" 
+                        alt="Chennai">
+                    </div>
+                    <div class="images">
+                        <div class="overlay"></div>
+                        <p class="image-title">Agra</p>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" 
+                        alt="Agra">
+                    </div>
+                    <div class="images">
+                        <div class="overlay"></div>
+                        <p class="image-title">Hyderbad</p>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" 
+                        alt="Jaipur">
+                    </div>
+                    <div class="images">
+                        <div class="overlay"></div>
+                        <p class="image-title">kolkata</p>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" 
+                        alt="Bengaluru">
+                    </div>
+                
             </div> 
-            <div class="view-more">
-                <a href="#">View More >></a>
+            <div class="view-more mb-4">
+                <a href="#" class="btn btn-secondary text-white">View More</a>
             </div>
         </div>
 
-        <!-- Footer Div-->
-        <footer>
-            <div class="contact-us">
-                <a href="./contact.html" target="_self">Contact Us</a>
-            </div>
-            <div class="copyright"><span>&copy; 2020 ROOM SEARCH PVT.LTD.</span></div>
-            
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/"  target="_blank">
-                    <img src="./assests/images/facebook.png" 
-                    alt="Fackbook"/>
-                </a>
-                <a href="https://www.instagram.com/"  target="_blank">
-                    <img src="./assests/images/instagram.png" 
-                    alt="Instagram"/>
-                </a>
-                <a href="https://www.twitter.com/"  target="_blank">
-                    <img src="./assests/images/twitter.png" 
-                    alt="Twitter"/>
-                </a>
-            </div>
-        
-        </footer>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+        <!-- Modal Login -->
+        <div class="login-modal modal" id="login-modal" data-backdrop="false"></div>
+        <!-- Modal 2 Contact Us -->
+        <div class="contactus-modal modal" id="contactus-modal" data-backdrop="false"></div>
 
     </div>
+    
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/common.js"></script>
 </body>
 </html>
